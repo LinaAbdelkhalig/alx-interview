@@ -20,7 +20,8 @@ def isWinner(x, nums):
         return None
 
     def sieve_of_eratosthenes(limit):
-        """Generates a list of primes up to a given limit using the Sieve of Eratosthenes."""
+        """Generates a list of primes up to a given limit
+        using the Sieve of Eratosthenes."""
         primes = [True] * (limit + 1)
         primes[0] = primes[1] = False  # 0 and 1 are not primes
         for i in range(2, int(limit**0.5) + 1):
